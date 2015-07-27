@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['dil',['Dil',['../group__shorthand.html#gac1844bf2cdc46bca3eac8f95d40864c5',1,'vsr::cga']]],
+  ['dilator',['Dilator',['../group__cgatypes.html#gab72f186d6f26350a259039e8cf961054',1,'vsr::cga']]],
+  ['directionbivector',['DirectionBivector',['../group__cgatypes.html#ga1bc5a64e83dd5f93ed9cadd2711aef99',1,'vsr::cga']]],
+  ['directiontrivector',['DirectionTrivector',['../group__cgatypes.html#ga19e2315be0ea1b9821cc643dfbbd4234',1,'vsr::cga']]],
+  ['directionvector',['DirectionVector',['../group__cgatypes.html#ga1b02dbee537f36e194e40fddd5c4a623',1,'vsr::cga']]],
+  ['dll',['Dll',['../group__shorthand.html#ga50a3c2958d6074188dfaa4419dc7f0dd',1,'vsr::cga']]],
+  ['dlp',['Dlp',['../group__shorthand.html#gaf3a691f6830216ee7f7232d4cf91ac74',1,'vsr::cga']]],
+  ['dls',['Dls',['../group__shorthand.html#gaf4e7f0637eb916b306fc7a1f8f2f17ae',1,'vsr::cga']]],
+  ['drb',['Drb',['../group__shorthand.html#ga02a16d6f68295d4a357e9aa7e617815a',1,'vsr::cga']]],
+  ['drt',['Drt',['../group__shorthand.html#ga15bf323751acf493cf0940a8a6910279',1,'vsr::cga']]],
+  ['drv',['Drv',['../group__shorthand.html#ga8ee0da2688bfcd3ad3175cfe727d8a4f',1,'vsr::cga']]],
+  ['dual',['Dual',['../structvsr_1_1_multivector.html#afaf87a6194ee8782ed91ad0b37247c9b',1,'vsr::Multivector']]],
+  ['duale',['DualE',['../structvsr_1_1_multivector.html#a38bd845c12ad63ca0fdd4efb691b651c',1,'vsr::Multivector']]],
+  ['dualline',['DualLine',['../group__cgatypes.html#ga43db9f78fda0440bdcc0a704ce39f337',1,'vsr::cga']]],
+  ['dualplane',['DualPlane',['../group__cgatypes.html#ga6e8a3319492b8f3edc12fb6e42798256',1,'vsr::cga']]],
+  ['dualsphere',['DualSphere',['../group__cgatypes.html#gaa6df5ed99ed18368161c58e33bc981ec',1,'vsr::cga']]]
+];
