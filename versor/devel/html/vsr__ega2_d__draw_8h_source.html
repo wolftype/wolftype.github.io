@@ -135,14 +135,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                glPopMatrix();</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        } </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="group__shorthand.html#gab372e87b4fd2a138cf67f0911d042707">Rot</a> AA( <span class="keyword">const</span> <a class="code" href="group__shorthand.html#gafd2195c6c144097e7253405029202a8b">Vec</a>&amp; s){            </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="group__shorthand.html#gab372e87b4fd2a138cf67f0911d042707">Rot</a> AA( <span class="keyword">const</span> Vec&amp; s){            </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;          <a class="code" href="group__shorthand.html#gab372e87b4fd2a138cf67f0911d042707">Rot</a> r = <a class="code" href="structvsr_1_1cga_1_1_gen.html#ac51164291712d19d42161339d43ce420">Gen::ratio</a>(Vec::y, s.unit() ); </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;          VT deg = Gen::iphi(r) * ( -180 / PI );</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;          <span class="keywordflow">return</span> <a class="code" href="group__shorthand.html#gab372e87b4fd2a138cf67f0911d042707">Rot</a>(deg, Gen::pl( r )[0]);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  }  </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> Immediate (<span class="keyword">const</span> <a class="code" href="group__shorthand.html#gafd2195c6c144097e7253405029202a8b">Vec</a>&amp; s){   </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> Immediate (<span class="keyword">const</span> Vec&amp; s){   </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="group__shorthand.html#gab372e87b4fd2a138cf67f0911d042707">Rot</a> t = AA(s);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    gfx::Glyph::Line2D(s);</div>
@@ -155,7 +155,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="ttc" id="group__shorthand_html_gafd2195c6c144097e7253405029202a8b"><div class="ttname"><a href="group__shorthand.html#gafd2195c6c144097e7253405029202a8b">vsr::cga::Vec</a></div><div class="ttdeci">NVec&lt; 5 &gt; Vec</div><div class="ttdoc">Vector </div><div class="ttdef"><b>Definition:</b> vsr_cga3D_types.h:62</div></div>
 <div class="ttc" id="vsr__generic__op_8h_html"><div class="ttname"><a href="vsr__generic__op_8h.html">vsr_generic_op.h</a></div><div class="ttdoc">core namespaced operations that are metric-agnostic </div></div>
 <div class="ttc" id="structvsr_1_1cga_1_1_gen_html_ac51164291712d19d42161339d43ce420"><div class="ttname"><a href="structvsr_1_1cga_1_1_gen.html#ac51164291712d19d42161339d43ce420">vsr::cga::Gen::ratio</a></div><div class="ttdeci">static Rot ratio(const Vec &amp;v, const Vec &amp;v2)</div><div class="ttdoc">vsr::cga::Rotor that takes one vec to another </div></div>
 <div class="ttc" id="namespacevsr_html"><div class="ttname"><a href="namespacevsr.html">vsr</a></div><div class="ttdoc"> the versor library namespace </div><div class="ttdef"><b>Definition:</b> vsr_algebra.h:29</div></div>
@@ -164,7 +163,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 27 2015 17:56:03 for versor by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2015 16:26:05 for versor by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

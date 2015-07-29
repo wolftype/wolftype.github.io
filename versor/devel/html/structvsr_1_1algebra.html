@@ -206,16 +206,21 @@ template&lt;bits::type grade&gt; </td></tr>
 <tr class="memdesc:a57c5b1b75b8639e58a5358b0af783b8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">make a type from a grade <br /></td></tr>
 <tr class="separator:a57c5b1b75b8639e58a5358b0af783b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe011fa815e47eab58ced06c4859fbaa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe011fa815e47eab58ced06c4859fbaa"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>types</b> = <a class="el" href="structvsr_1_1named__types.html">named_types</a>&lt; <a class="el" href="structvsr_1_1algebra.html#a983051b325287b928256c78150845b19">impl</a> &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsr_1_1algebra.html#afe011fa815e47eab58ced06c4859fbaa">types</a> = <a class="el" href="structvsr_1_1named__types.html">named_types</a>&lt; <a class="el" href="structvsr_1_1algebra.html#a983051b325287b928256c78150845b19">impl</a> &gt;</td></tr>
+<tr class="memdesc:afe011fa815e47eab58ced06c4859fbaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">certain prenamed types in euclidean and conformal <br /></td></tr>
 <tr class="separator:afe011fa815e47eab58ced06c4859fbaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7428a5946fbf566335a5fbffb0ca3288"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7428a5946fbf566335a5fbffb0ca3288"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsr_1_1algebra.html#a7428a5946fbf566335a5fbffb0ca3288">up</a> = <a class="el" href="structvsr_1_1algebra.html">algebra</a>&lt; typename metric::up, <a class="el" href="structvsr_1_1algebra.html#a0e2c8a84d631111d5c3a67a5d3dd4e0e">value_t</a> &gt;</td></tr>
 <tr class="memdesc:a7428a5946fbf566335a5fbffb0ca3288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next Higher Algebra over the same field. <br /></td></tr>
 <tr class="separator:a7428a5946fbf566335a5fbffb0ca3288"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfb232679b2e24219654dab0b1332228"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abfb232679b2e24219654dab0b1332228"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsr_1_1algebra.html#abfb232679b2e24219654dab0b1332228">vector</a> = typename <a class="el" href="structvsr_1_1blade.html">blade</a>&lt; <a class="el" href="structvsr_1_1algebra.html#a9881233e8bda0efe41505b0c918d3179">dim</a>, 1 &gt;::type</td></tr>
-<tr class="memdesc:abfb232679b2e24219654dab0b1332228"><td class="mdescLeft">&#160;</td><td class="mdescRight">&ndash; 1-blade vector element <br /></td></tr>
-<tr class="separator:abfb232679b2e24219654dab0b1332228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51afc5e3c08076c7bfa419d95b1432a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51afc5e3c08076c7bfa419d95b1432a6"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsr_1_1algebra.html#a51afc5e3c08076c7bfa419d95b1432a6">vector_basis</a> = typename <a class="el" href="structvsr_1_1blade.html">blade</a>&lt; <a class="el" href="structvsr_1_1algebra.html#a9881233e8bda0efe41505b0c918d3179">dim</a>, 1 &gt;::type</td></tr>
+<tr class="memdesc:a51afc5e3c08076c7bfa419d95b1432a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">&ndash; 1-blade vector basis (no data) <br /></td></tr>
+<tr class="separator:a51afc5e3c08076c7bfa419d95b1432a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6265fa6d24a6041ce9ea2ce15a116115"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6265fa6d24a6041ce9ea2ce15a116115"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsr_1_1algebra.html#a6265fa6d24a6041ce9ea2ce15a116115">vec</a> = <a class="el" href="structvsr_1_1algebra.html#a0da66870e7f6380cf55b79c84acfc2b0">mv_t</a>&lt; <a class="el" href="structvsr_1_1algebra.html#a51afc5e3c08076c7bfa419d95b1432a6">vector_basis</a> &gt;</td></tr>
+<tr class="memdesc:a6265fa6d24a6041ce9ea2ce15a116115"><td class="mdescLeft">&#160;</td><td class="mdescRight">&ndash; 1-blade vector type (stores data) <br /></td></tr>
+<tr class="separator:a6265fa6d24a6041ce9ea2ce15a116115"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -291,7 +296,7 @@ struct vsr::algebra&lt; metric_type, value_type &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 27 2015 17:56:03 for versor by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2015 16:26:05 for versor by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

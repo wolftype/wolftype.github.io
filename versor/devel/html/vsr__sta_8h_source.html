@@ -107,32 +107,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">        </span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> SEE Hestenes Space Time Algebra</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;vsr_products.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="vsr__multivector_8h.html">detail/vsr_multivector.h</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevsr.html">vsr</a>{</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">namespace </span>sta {</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structvsr_1_1sta_1_1_s_t_a.html">   14</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structvsr_1_1sta_1_1_s_t_a.html">STA</a> : MGA&lt; typename RMetric&lt;1,3&gt;::Type &gt;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;         </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                <span class="comment">/*STANDARD FRAME of Orthonormal vectors decribes an Event ( time + location )</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">              An event, &quot;proper vector&quot; can be a proper momentum ( energy-momentum vector ) of a particle </span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">                  or a proper velocity</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">                */</span>        </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                                         </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                <span class="comment">//&quot;Proper Vector&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                <span class="keyword">using</span> Event = <a class="code" href="group__shorthand.html#gafd2195c6c144097e7253405029202a8b">Vec</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">using</span> algebra = algebra&lt; metric&lt;1,3&gt;, <span class="keywordtype">double</span> &gt;;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;         </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                <span class="comment">/*STANDARD FRAME of Orthonormal vectors decribes an Event ( time + location )</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">              An event, &quot;proper vector&quot; can be a proper momentum ( energy-momentum vector ) of a particle </span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">                  or a proper velocity</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">                */</span>        </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                                        </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                 <span class="comment">//&quot;Proper Vector&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                 <span class="keyword">using</span> <span class="keyword">event</span> = <a class="code" href="structvsr_1_1algebra.html#a6265fa6d24a6041ce9ea2ce15a116115">algebra::vec</a>;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="comment">//Dirac Matrices are the Y . . . </span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;             <span class="keyword">using</span> Y0 = e&lt;1&gt;;                                                           <span class="comment">//timelike observer (squares to 1) </span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                                                                                                 <span class="comment">//forward light cone</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                        </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;         <span class="keyword">using</span> Y1 = e&lt;2&gt;;                                                               <span class="comment">//spacelike    </span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                 <span class="keyword">using</span> Y2 = e&lt;3&gt;;                                                               <span class="comment">//spacelike    </span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                 <span class="keyword">using</span> Y3 = e&lt;4&gt;;                                                               <span class="comment">//spacelike   </span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                 <span class="comment">//Dirac Matrices are the Y . . . </span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;           <span class="keyword">using</span> y0 = algebra::e&lt;1&gt;;                                                            <span class="comment">//timelike observer (squares to 1) </span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                                                                                                          <span class="comment">//forward light cone</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;           <span class="comment">//Spacelike             </span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;     <span class="keyword">using</span> y1 = algebra::e&lt;2&gt;;                                          </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                 <span class="keyword">using</span> y2 = algebra::e&lt;3&gt;;                                               </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                 <span class="keyword">using</span> y3 = algebra::e&lt;4&gt;;                                              </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <span class="comment">//Right-handed unit pseudoscalar</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                 <span class="keyword">using</span> I = MV&lt; pss(4) &gt;; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                 <span class="keyword">using</span> I = algebra::blades&lt;4&gt;: </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;       </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <span class="comment">//individual position space vectors are made from spacetime bivectors yk^y0 </span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <span class="comment">// (considered &quot;relative vectors...&quot; -- relative to y0 . . . </span></div>
@@ -153,9 +153,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                    </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">typedef</span> MGAMV&lt; STA::Metric, STA::Vec &gt; <a class="code" href="group__shorthand.html#gafd2195c6c144097e7253405029202a8b">Vec</a>; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">typedef</span> MGAMV&lt; STA::Metric, STA::Vec &gt; Vec; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">typedef</span> MGAMV&lt; STA::Metric, STA::Sca &gt; <a class="code" href="group__shorthand.html#gacba58173ece08df0f9ee6d1027582d72">Sca</a>; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">typedef</span> MGAMV&lt; STA::Metric, STA::Sca &gt; Sca; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">typedef</span> MGAMV&lt; STA::Metric, STA::Y0 &gt; Y0; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">typedef</span> MGAMV&lt; STA::Metric, STA::Y1 &gt; Y1;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">typedef</span> MGAMV&lt; STA::Metric, STA::Y2 &gt; Y2;</div>
@@ -179,14 +179,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="ttc" id="group__shorthand_html_gafd2195c6c144097e7253405029202a8b"><div class="ttname"><a href="group__shorthand.html#gafd2195c6c144097e7253405029202a8b">vsr::cga::Vec</a></div><div class="ttdeci">NVec&lt; 5 &gt; Vec</div><div class="ttdoc">Vector </div><div class="ttdef"><b>Definition:</b> vsr_cga3D_types.h:62</div></div>
+<div class="ttc" id="structvsr_1_1algebra_html_a6265fa6d24a6041ce9ea2ce15a116115"><div class="ttname"><a href="structvsr_1_1algebra.html#a6265fa6d24a6041ce9ea2ce15a116115">vsr::algebra::vec</a></div><div class="ttdeci">mv_t&lt; vector_basis &gt; vec</div><div class="ttdoc">– 1-blade vector type (stores data) </div><div class="ttdef"><b>Definition:</b> vsr_algebra.h:237</div></div>
 <div class="ttc" id="namespacevsr_html"><div class="ttname"><a href="namespacevsr.html">vsr</a></div><div class="ttdoc"> the versor library namespace </div><div class="ttdef"><b>Definition:</b> vsr_algebra.h:29</div></div>
-<div class="ttc" id="group__shorthand_html_gacba58173ece08df0f9ee6d1027582d72"><div class="ttname"><a href="group__shorthand.html#gacba58173ece08df0f9ee6d1027582d72">vsr::cga::Sca</a></div><div class="ttdeci">NSca&lt; 5 &gt; Sca</div><div class="ttdoc">Scalar </div><div class="ttdef"><b>Definition:</b> vsr_cga3D_types.h:61</div></div>
-<div class="ttc" id="structvsr_1_1sta_1_1_s_t_a_html"><div class="ttname"><a href="structvsr_1_1sta_1_1_s_t_a.html">vsr::sta::STA</a></div><div class="ttdef"><b>Definition:</b> vsr_sta.h:14</div></div>
+<div class="ttc" id="vsr__multivector_8h_html"><div class="ttname"><a href="vsr__multivector_8h.html">vsr_multivector.h</a></div><div class="ttdoc">generic multivector class, templated on a geometric algebra and a field </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 27 2015 17:56:03 for versor by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2015 16:26:05 for versor by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

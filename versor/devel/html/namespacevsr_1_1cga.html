@@ -119,8 +119,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsr_1_1cga_1_1_constrain.html">Constrain</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Methods for Evaluating Constrained Points using Intersections of Sphere-based Distances.  <a href="structvsr_1_1cga_1_1_constrain.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsr_1_1cga_1_1construct.html">construct</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructive syntactic sugar for making geometric elements  <a href="structvsr_1_1cga_1_1construct.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvsr_1_1cga_1_1_construct.html">Construct</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructive syntactic sugar for making geometric elements  <a href="structvsr_1_1cga_1_1_construct.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvsr_1_1cga_1_1_coupled_twist.html">CoupledTwist</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coupled <a class="el" href="classvsr_1_1cga_1_1_twist.html" title="Decomposed Dual Line (As a Bivector and Direction Vector to it ) ">Twist</a> <a class="el" href="structvsr_1_1cga_1_1_shape.html">Shape</a> Generation x, y, z (after Rosenhahn et al)  <a href="classvsr_1_1cga_1_1_coupled_twist.html#details">More...</a><br /></td></tr>
@@ -509,7 +509,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= [](<span class="keyword">const</span> <a class="code" href="group__cgatypes.html#gaa6df5ed99ed18368161c58e33bc981ec">DualSphere</a>&amp; s, VSR_PRECISION t, VSR_PRECISION p){</div>
-<div class="line">     <span class="keywordflow">return</span> construct::pair(s, Vec::x.sp( Gen::rot(t,p) ) );</div>
+<div class="line">     <span class="keywordflow">return</span> Construct::pair(s, Vec::x.sp( Gen::rot(t,p) ) );</div>
 <div class="line">    }</div>
 <div class="ttc" id="group__cgatypes_html_gaa6df5ed99ed18368161c58e33bc981ec"><div class="ttname"><a href="group__cgatypes.html#gaa6df5ed99ed18368161c58e33bc981ec">vsr::cga::DualSphere</a></div><div class="ttdeci">Pnt DualSphere</div><div class="ttdoc">Same Type as Point \(\sigma\) </div><div class="ttdef"><b>Definition:</b> vsr_cga3D_types.h:132</div></div>
 </div><!-- fragment -->
@@ -527,7 +527,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= [](<span class="keyword">const</span> <a class="code" href="group__cgatypes.html#gab31e201a1075bc2829998ff32fb028fa">Circle</a>&amp; c, VSR_PRECISION t){</div>
-<div class="line">     <span class="keywordflow">return</span> construct::point(c,t);</div>
+<div class="line">     <span class="keywordflow">return</span> Construct::point(c,t);</div>
 <div class="line">    }</div>
 <div class="ttc" id="group__cgatypes_html_gab31e201a1075bc2829998ff32fb028fa"><div class="ttname"><a href="group__cgatypes.html#gab31e201a1075bc2829998ff32fb028fa">vsr::cga::Circle</a></div><div class="ttdeci">Cir Circle</div><div class="ttdoc">Direct Circle 3-blade \(\kappa=p_a \wedge p_b \wedge p_c\) </div><div class="ttdef"><b>Definition:</b> vsr_cga3D_types.h:130</div></div>
 </div><!-- fragment -->
@@ -564,7 +564,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= [](<span class="keyword">const</span> <a class="code" href="group__cgatypes.html#gaa6df5ed99ed18368161c58e33bc981ec">DualSphere</a>&amp; s, VSR_PRECISION t, VSR_PRECISION p){</div>
-<div class="line">      <span class="keywordflow">return</span> construct::pointA( <a class="code" href="namespacevsr_1_1cga.html#a63cdc167444a7e489c64db052a9dcb75">pairOnSphere</a>(s,t,p) ).null(); </div>
+<div class="line">      <span class="keywordflow">return</span> Construct::pointA( <a class="code" href="namespacevsr_1_1cga.html#a63cdc167444a7e489c64db052a9dcb75">pairOnSphere</a>(s,t,p) ).null(); </div>
 <div class="line">    }</div>
 <div class="ttc" id="namespacevsr_1_1cga_html_a63cdc167444a7e489c64db052a9dcb75"><div class="ttname"><a href="namespacevsr_1_1cga.html#a63cdc167444a7e489c64db052a9dcb75">vsr::cga::pairOnSphere</a></div><div class="ttdeci">auto pairOnSphere</div><div class="ttdoc">a pair on dual sphere </div><div class="ttdef"><b>Definition:</b> vsr_cga3D_op.h:558</div></div>
 <div class="ttc" id="group__cgatypes_html_gaa6df5ed99ed18368161c58e33bc981ec"><div class="ttname"><a href="group__cgatypes.html#gaa6df5ed99ed18368161c58e33bc981ec">vsr::cga::DualSphere</a></div><div class="ttdeci">Pnt DualSphere</div><div class="ttdoc">Same Type as Point \(\sigma\) </div><div class="ttdef"><b>Definition:</b> vsr_cga3D_types.h:132</div></div>
@@ -629,7 +629,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 27 2015 17:56:04 for versor by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2015 16:26:06 for versor by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

@@ -15,5 +15,6 @@ var searchData=
   ['trv',['Trv',['../group__shorthand.html#ga2d1db1b95c3d530b0a3304e158cc2e19',1,'vsr::cga']]],
   ['tsd',['Tsd',['../group__shorthand.html#ga3fcf22405bf6ebdd596aa6783845a2d3',1,'vsr::cga']]],
   ['tvec',['TVec',['../structvsr_1_1nga_1_1_proj.html#a5dca0b9b2bde6f5130d989c9cc3e5d46',1,'vsr::nga::Proj']]],
-  ['type',['Type',['../structvsr_1_1_convex_hull.html#a04398c1f212f20e0ea6dd6e1a561eb9e',1,'vsr::ConvexHull']]]
+  ['type',['Type',['../structvsr_1_1_convex_hull.html#a04398c1f212f20e0ea6dd6e1a561eb9e',1,'vsr::ConvexHull']]],
+  ['types',['types',['../structvsr_1_1algebra.html#afe011fa815e47eab58ced06c4859fbaa',1,'vsr::algebra']]]
 ];

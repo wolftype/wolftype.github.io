@@ -150,12 +150,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="group__shorthand.html#gafd2195c6c144097e7253405029202a8b">Vec</a> tz (tv[0], tv[1], tv[2] );</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    mMouse2D =  <a class="code" href="structvsr_1_1cga_1_1construct.html#a931b263787788523f769c31fab405ffe">vsr::cga::construct::point</a>(p[0],p[1],0);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    mMouse3D =  <a class="code" href="structvsr_1_1cga_1_1construct.html#a931b263787788523f769c31fab405ffe">vsr::cga::construct::point</a>(p[0],p[1],p[2]);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    mMouse2D =  <a class="code" href="structvsr_1_1cga_1_1_construct.html#a65d89493fe4222e6fb22757b781fa3e9">vsr::cga::Construct::point</a>(p[0],p[1],0);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    mMouse3D =  <a class="code" href="structvsr_1_1cga_1_1_construct.html#a65d89493fe4222e6fb22757b781fa3e9">vsr::cga::Construct::point</a>(p[0],p[1],p[2]);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    mMouseRay = mMouse3D ^ tz ^ <a class="code" href="group__cgatypes.html#ga4a9b7ace8fa6d32cac7897629b9cf50d">vsr::cga::Infinity</a>(1); </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//intersection of ray with plane</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    mMouse3D = <a class="code" href="structvsr_1_1cga_1_1construct.html#aa8fbf6d28d95de7ce9a0085d6d582dba">vsr::cga::construct::meet</a>( mMouseRay, <a class="code" href="structvsr_1_1_multivector.html">vsr::cga::DualPlane</a>(tz) );</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    mMouse3D = <a class="code" href="structvsr_1_1cga_1_1_construct.html#a6766015ff3798e0e55c618a4646d045b">vsr::cga::Construct::meet</a>( mMouseRay, <a class="code" href="structvsr_1_1_multivector.html">vsr::cga::DualPlane</a>(tz) );</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> mMouse3D;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
@@ -225,18 +225,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;};</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif   </span><span class="comment">/* ----- #ifndef vsr_cga3D_app_INC  ----- */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="structvsr_1_1cga_1_1_construct_html_a6766015ff3798e0e55c618a4646d045b"><div class="ttname"><a href="structvsr_1_1cga_1_1_construct.html#a6766015ff3798e0e55c618a4646d045b">vsr::cga::Construct::meet</a></div><div class="ttdeci">static Circle meet(const Dls &amp;s, const Dls &amp;d)</div><div class="ttdoc">circle intersection of dual spheres </div></div>
 <div class="ttc" id="vsr__cga3_d__op_8h_html"><div class="ttname"><a href="vsr__cga3_d__op_8h.html">vsr_cga3D_op.h</a></div><div class="ttdoc">Common Operations Specific to CGA3D. </div></div>
 <div class="ttc" id="group__shorthand_html_gafd2195c6c144097e7253405029202a8b"><div class="ttname"><a href="group__shorthand.html#gafd2195c6c144097e7253405029202a8b">vsr::cga::Vec</a></div><div class="ttdeci">NVec&lt; 5 &gt; Vec</div><div class="ttdoc">Vector </div><div class="ttdef"><b>Definition:</b> vsr_cga3D_types.h:62</div></div>
-<div class="ttc" id="structvsr_1_1cga_1_1construct_html_aa8fbf6d28d95de7ce9a0085d6d582dba"><div class="ttname"><a href="structvsr_1_1cga_1_1construct.html#aa8fbf6d28d95de7ce9a0085d6d582dba">vsr::cga::construct::meet</a></div><div class="ttdeci">static Circle meet(const Dls &amp;s, const Dls &amp;d)</div><div class="ttdoc">circle intersection of dual spheres </div></div>
 <div class="ttc" id="struct_app_html_a07f6fdb8b7d4d24926f7ef0c96f2bdc4"><div class="ttname"><a href="struct_app.html#a07f6fdb8b7d4d24926f7ef0c96f2bdc4">App::onKeyDown</a></div><div class="ttdeci">virtual void onKeyDown(const gfx::Keyboard &amp;k)</div><div class="ttdoc">Called when a keyboard key is pressed. </div><div class="ttdef"><b>Definition:</b> vsr_cga3D_app.h:64</div></div>
+<div class="ttc" id="structvsr_1_1cga_1_1_construct_html_a65d89493fe4222e6fb22757b781fa3e9"><div class="ttname"><a href="structvsr_1_1cga_1_1_construct.html#a65d89493fe4222e6fb22757b781fa3e9">vsr::cga::Construct::point</a></div><div class="ttdeci">static Point point(const Circle &amp;c, VSR_PRECISION t)</div><div class="ttdoc">Point on Circle at theta t. </div></div>
 <div class="ttc" id="structvsr_1_1_multivector_html"><div class="ttname"><a href="structvsr_1_1_multivector.html">vsr::Multivector</a></div><div class="ttdoc">Generic Geometric Number Types (templated on an algebra and a basis ) </div><div class="ttdef"><b>Definition:</b> vsr_algebra.h:69</div></div>
 <div class="ttc" id="group__cgatypes_html_ga4a9b7ace8fa6d32cac7897629b9cf50d"><div class="ttname"><a href="group__cgatypes.html#ga4a9b7ace8fa6d32cac7897629b9cf50d">vsr::cga::Infinity</a></div><div class="ttdeci">Inf Infinity</div><div class="ttdoc">Null Infinity Blade: \(n_\infty\) </div><div class="ttdef"><b>Definition:</b> vsr_cga3D_types.h:125</div></div>
 <div class="ttc" id="struct_app_html"><div class="ttname"><a href="struct_app.html">App</a></div><div class="ttdef"><b>Definition:</b> vsr_cga3D_app.h:35</div></div>
-<div class="ttc" id="structvsr_1_1cga_1_1construct_html_a931b263787788523f769c31fab405ffe"><div class="ttname"><a href="structvsr_1_1cga_1_1construct.html#a931b263787788523f769c31fab405ffe">vsr::cga::construct::point</a></div><div class="ttdeci">static Point point(const Circle &amp;c, VSR_PRECISION t)</div><div class="ttdoc">Point on Circle at theta t. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 27 2015 17:56:03 for versor by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2015 16:26:05 for versor by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

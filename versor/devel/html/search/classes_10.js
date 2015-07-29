@@ -11,6 +11,5 @@ var searchData=
   ['spacegroup3d',['SpaceGroup3D',['../structvsr_1_1_space_group3_d.html',1,'vsr']]],
   ['sph',['Sph',['../structvsr_1_1cga_1_1_coord_1_1_sph.html',1,'vsr::cga::Coord']]],
   ['spherical',['Spherical',['../structvsr_1_1cga_1_1_spherical.html',1,'vsr::cga']]],
-  ['sta',['STA',['../structvsr_1_1sta_1_1_s_t_a.html',1,'vsr::sta']]],
   ['stat',['Stat',['../classvsr_1_1_stat.html',1,'vsr']]]
 ];

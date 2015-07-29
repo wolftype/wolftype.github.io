@@ -4,7 +4,7 @@ var searchData=
   ['conic',['Conic',['../classvsr_1_1_conic.html',1,'vsr']]],
   ['constrain',['Constrain',['../structvsr_1_1cga_1_1_constrain.html',1,'vsr::cga']]],
   ['constraint',['Constraint',['../structvsr_1_1_constraint.html',1,'vsr']]],
-  ['construct',['construct',['../structvsr_1_1cga_1_1construct.html',1,'vsr::cga']]],
+  ['construct',['Construct',['../structvsr_1_1cga_1_1_construct.html',1,'vsr::cga']]],
   ['convexhull',['ConvexHull',['../structvsr_1_1_convex_hull.html',1,'vsr']]],
   ['coupledtwist',['CoupledTwist',['../classvsr_1_1cga_1_1_coupled_twist.html',1,'vsr::cga']]],
   ['cubeedge',['CubeEdge',['../structvsr_1_1_cube_edge.html',1,'vsr']]],

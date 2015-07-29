@@ -10,7 +10,7 @@ var searchData=
   ['simplicial2',['Simplicial2',['../structvsr_1_1cga_1_1_simplicial2.html#abaf2e4c88c2ace339e85ec581c69db34',1,'vsr::cga::Simplicial2']]],
   ['size',['size',['../structvsr_1_1nga_1_1_round.html#a67d895ad7ca3c5cd43ea715c5b95bcf6',1,'vsr::nga::Round::size()'],['../structvsr_1_1cga_1_1_round.html#a9053776b843e8479baaba631b9dd92f2',1,'vsr::cga::Round::size(const DualSphere &amp;s, bool bDual=true)'],['../structvsr_1_1cga_1_1_round.html#a9018c476a6ef01eff3dc8319749ea410',1,'vsr::cga::Round::size(const Pair &amp;s, bool bDual=true)'],['../structvsr_1_1cga_1_1_round.html#a674e96bbd1e6f735381d5416b3b065b5',1,'vsr::cga::Round::size(const Circle &amp;s, bool bDual=false)'],['../structvsr_1_1cga_1_1_round.html#acae7edb95f9241ec79985a6621319f45',1,'vsr::cga::Round::size(const Sphere &amp;s, bool bDual=false)']]],
   ['skin',['Skin',['../structvsr_1_1cga_1_1_shape.html#a030456190b89ccc2225b1722c1a095f3',1,'vsr::cga::Shape']]],
-  ['sline',['sline',['../structvsr_1_1cga_1_1construct.html#a6add40d8c32195bcfd7b99fcc9d4a8d4',1,'vsr::cga::construct']]],
+  ['sline',['sline',['../structvsr_1_1cga_1_1_construct.html#acdcd9e2c985ff9f5663d590b6653ac2f',1,'vsr::cga::Construct']]],
   ['sn',['sn',['../structvsr_1_1nga_1_1_op.html#ac3034dd10a646953c4f575ff6235fc85',1,'vsr::nga::Op::sn()'],['../structvsr_1_1cga_1_1_op.html#ab75e5df52bb8c26da533622fb12da340',1,'vsr::cga::Op::sn()']]],
   ['spacegroup2d',['SpaceGroup2D',['../structvsr_1_1_space_group2_d.html#a32209a375352619625db626c79b869f9',1,'vsr::SpaceGroup2D']]],
   ['sphere',['sphere',['../structvsr_1_1nga_1_1_round.html#ade12ce08eebf9b54ddee05d044480d4f',1,'vsr::nga::Round::sphere()'],['../structvsr_1_1cga_1_1_round.html#a19bacfb355bd72811557a10bcc41363c',1,'vsr::cga::Round::sphere()']]],

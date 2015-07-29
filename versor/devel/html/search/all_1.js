@@ -22,6 +22,6 @@ var searchData=
   ['atanh2',['atanh2',['../structvsr_1_1cga_1_1_gen.html#a73888d07e8f325ef7e807f843cf3e1dc',1,'vsr::cga::Gen']]],
   ['avec',['aVec',['../classvsr_1_1cga_1_1_frame.html#aa6251253f47af3ba06db74f4736ecbe3',1,'vsr::cga::Frame']]],
   ['ax',['ax',['../classvsr_1_1cga_1_1_frame.html#a6c1e4c862028bbac33a3f00d7e8a03bb',1,'vsr::cga::Frame::ax()'],['../classvsr_1_1cga_1_1_frame.html#a3b8f9bfbe9e7fd5a2a476332be5b3522',1,'vsr::cga::Frame::ax() const ']]],
-  ['axis',['axis',['../structvsr_1_1cga_1_1construct.html#a20a2459465f455a8164151a8c0111cd1',1,'vsr::cga::construct']]],
+  ['axis',['axis',['../structvsr_1_1cga_1_1_construct.html#a396f7431c4415694b5e8f26927029200',1,'vsr::cga::Construct']]],
   ['axisangle',['axisAngle',['../structvsr_1_1nga_1_1_gen.html#a7edf88315e45b070094c1d1e491c45ea',1,'vsr::nga::Gen']]]
 ];
