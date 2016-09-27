@@ -1,9 +1,30 @@
-<h2 id="documentationforprojects">Documentation for Projects</h2>
+---
+layout: default
+---
 
-<h1 id="versor">Versor</h1>
+<div class="home">
 
-<p>The most up-to-date documentation is for the <a href="versor/devel/html/index.html">devel branch</a></p>
+<center>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="1000" height="200" src="scratch/webgl_shaders.html"></iframe>
+</center>
 
-<h1 id="gfx">GFX</h1>
+<a href="versor/devel/html/index.html">Versor Documentation (devel branch)</a></p>
 
-<p>Not yet documented &#8230;</p>
+  <ul class="post-list">
+    {% for category in site.categories %}
+      <h1>{{ category[0] | capitalize }}</h1>
+      {% assign sorted = category[1] | sort %}
+      {% for post in sorted %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          {{ post.excerpt }}
+        </h2>
+      </li>
+      {% endfor %}
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
